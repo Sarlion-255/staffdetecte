@@ -377,7 +377,7 @@ public final class StaffMonitor {
             player.sendMessage(text, true);
             if (StaffConfig.get().soundAlerts) {
                 client.getSoundManager().play(
-                        PositionedSoundInstance.master(SoundEvents.ENTITY_PLAYER_LEVELUP, 0.6f));
+                        PositionedSoundInstance.ui(SoundEvents.ENTITY_PLAYER_LEVELUP, 0.6f, 1.0f));
             }
         }
     }
